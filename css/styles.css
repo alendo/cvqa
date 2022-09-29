@@ -1,0 +1,217 @@
+
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    margin-top: 0;  
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #0F3D3E;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2 rem;
+    margin-top: 70px;
+    color: #0F3D3E;
+    font-weight: lighter;
+}
+
+.toph2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0;
+  
+}
+
+h3 {
+    color: #11999E;
+    
+}
+.profile {
+    text-align: center;
+    width: 60%;
+    margin: 80px auto;
+    line-height: 2;
+}
+.footer-link {
+    color: #0F3D3E;
+    margin: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.top-Container {
+    background-color: #F1F1F1;
+    padding-top: 150px;
+    position: relative;
+    height: 430px;
+}
+
+.middle-Container {
+   
+}
+
+.bottom-container {
+    background-color: #F1F1F1;
+    height: 150px;
+    padding-top: 50px;
+    
+}
+
+.copywrite {
+    margin-top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 350px;
+    bottom: 230px;
+    width: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 350px;
+    top: 70px;
+    width: 100px;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+
+}
+
+.testing-img {
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+}
+
+.calendar-img {
+    width: 150px;
+    float: right;
+    margin-left: 30px;
+}
+
+.api-img {
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+}
+
+.magnifyingglass-img {
+    width: 150px;
+    float: right;
+    margin-left: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+hr {
+    border-color: #E2DCC8;
+    border-style: none none dotted none;
+    border-width: 0 0 5px 0;
+    width: 4%;
+}
+
+.btn {
+    background-color: #11999E;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #6ab1bf; /* Green */
+    color: white;
+  }
+
+  .copywrite {
+    color: #b1ad9e;
+  }
+/* 
+
+Notes: 
+
+- To remove default margins and padding of the body, set them
+    to 0. This will make the body flush to the edge and corners
+
+- To center elements
+    A. Use property called  text-align
+        Do it using:  text-align: center;
+        This must be set inside the PARENT container, like the body selector
+        or top-container (in which the elements you want to center reside)
+        This will center everything that doesn't have a width set
+        This works as long as we have inline-block elements (images)
+        or full-width block elements (like h1, p)
+    B. Use property called  margin
+        Do it using:   margin: 0 auto 0 auto
+        Use when an element has a width
+        Margin will center element either horizontally or vertically
+            Here, margin top is 0
+            Here, margin left is auto
+            Here, margin bottom is 0
+            Here, margin right is auto
+
+- To take an element (like an image) that is affecting the layout, you
+    can take the element out of the HTML flow.
+    You do that by changing the position property.
+    From position: static --> to position: absoulte
+    Above, we gave a class to each image of clouds and then in the
+    selector, we set the position to absolute. Now that cloud is taken
+    out of the html flow and is "floating" around.
+
+    Important: In order to position an element ABSOLUTE to something, 
+    one of it's parents must have it's position set to RELATIVE. If 
+    we don't it's position will be relative to the body.
+
+        So, we set the clouds to  position: absolute;  AND we
+        set the top-container as  position: relative; 
+            Thus we have created the child (clouds) absolute to
+            the parent (top-container)
+
+- Adding Fonts
+    A. font-family property
+        Generic types like serif or sans-serif
+            ex.   font-family: serfi;
+        More specific: use the name of the font like Arial or Verdana
+            ex.   font-family: verdana;
+        Even more specific: embed the font
+            Ex steps: go to google fonts, search for font, add the font then:
+                1. copy link with font param and add link to index.html (head
+                section)
+                2. Copy or write the CSS rules to specify the family
+
+- Wrapping text around image
+    using  float property in css = posiitons an elemented to the left or right side of
+    a container. It basically takes the elemented out of the order of html
+    This is popular for wrapping elements around images
+        ex.   float: left;
+    
+*/
